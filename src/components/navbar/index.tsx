@@ -1,28 +1,111 @@
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import Image from "next/image";
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <div className="h-20 w-full bg-muted flex justify-center items-center border-b shadow-md">
-      <div className="md:max-w-[80%] w-full flex items-center justify-between">
-        <div>
-          <Image width={200} height={80} src={"/Scrap-Vendor-Logo.webp"} alt="Logo" />
-        </div>
-        <div className="flex items-center justify-end gap-5 text-primary">
-          <Link href={"#"} className="hover:underline hover:font-bold transition-all">
-            Home
-          </Link>
-          <Link href={"#"} className="hover:underline hover:font-bold">
-            Why Us
-          </Link>
-          <Link href={"#"} className="hover:underline hover:font-bold">
-            Scrap Rates
-          </Link>
+    <header className="bg-background text-foreground shadow-md">
+      <div className="flex justify-between items-center py-5 px-[20px] md:px-[5%] lg:px-[10%] max-w-screen-2xl mx-auto">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="text-2xl font-bold text-primary flex items-center gap-2"
+        >
+          <Image
+            src="/logo.png"
+            alt="ScrapVendor Logo"
+            width={150}
+            height={40}
+          />
+        </Link>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-10 text-lg font-semibold">
+          <li>
+            <Link
+              href="/"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/services"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/pricing"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+
+        {/* Mobile Menu */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <SheetTitle>
+                <button aria-label="Toggle Menu">
+                  <Menu className="h-7 w-7" />
+                </button>
+              </SheetTitle>
+            </SheetTrigger>
+
+            <SheetContent
+              side="right"
+              className="bg-muted text-foreground w-64"
+            >
+              <nav className="mt-8 space-y-6 text-lg font-semibold">
+                <Link
+                  href="/"
+                  className="block hover:text-primary transition-colors duration-200"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/services"
+                  className="block hover:text-primary transition-colors duration-200"
+                >
+                  Services
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="block hover:text-primary transition-colors duration-200"
+                >
+                  Pricing
+                </Link>
+                <Link
+                  href="/contact"
+                  className="block hover:text-primary transition-colors duration-200"
+                >
+                  Contact
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
-    </div>
+    </header>
   );
-};
-
-export default Navbar;
+}
