@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function HowItWorks() {
   return (
-    <section className="bg-background py-12">
+    <section id="howitworks" className="bg-background py-12">
       <div className="px-[20px] md:px-[5%] lg:px-[10%] max-w-screen-2xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-10">
           How it works

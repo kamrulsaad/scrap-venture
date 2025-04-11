@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function WhyUs() {
   return (
-    <section className="bg-primary py-14">
+    <section id="whyus" className="bg-primary py-14">
       <div className="px-[20px] md:px-[5%] lg:px-[10%] max-w-screen-2xl mx-auto text-center text-white">
         <h2 className="text-3xl md:text-4xl font-bold mb-10">Why Choose Scrap Venture?</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

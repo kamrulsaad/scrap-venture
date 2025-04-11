@@ -37,18 +37,18 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/services"
+              href="#howitworks"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
-              Services
+              How It Works
             </Link>
           </li>
           <li>
             <Link
-              href="/pricing"
+              href="#whyus"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
-              Pricing
+              Why Us?
             </Link>
           </li>
           <li>
@@ -84,16 +84,16 @@ export default function Navbar() {
                   Home
                 </Link>
                 <Link
-                  href="/services"
+                  href="#howitworks"
                   className="block hover:text-primary transition-colors duration-200"
                 >
-                  Services
+                  How it Works
                 </Link>
                 <Link
-                  href="/pricing"
+                  href="#whyus"
                   className="block hover:text-primary transition-colors duration-200"
                 >
-                  Pricing
+                  Why Us?
                 </Link>
                 <Link
                   href="/contact"
