@@ -19,7 +19,7 @@ export default function Navbar() {
         >
           <Image
             src="/logo.png"
-            alt="ScrapVendor Logo"
+            alt="Scrap Venture Logo"
             width={150}
             height={40}
           />

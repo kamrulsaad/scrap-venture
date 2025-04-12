@@ -1,3 +1,3 @@
-# Scrap Vendor
+# Scrap Venture
 
 ## Everything is reusable

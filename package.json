@@ -1,7 +1,12 @@
 {
-  "name": "scrap-vendor",
+  "name": "scrap-venture",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Kamrul Saad",
+    "email": "skamrul2680@gmail.com",
+    "url": "https://github.com/kamrulsaad/scrap-venture.git"
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",

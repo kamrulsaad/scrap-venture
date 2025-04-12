@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Scrap Vendor",
+  title: "Scrap Venture",
   description: "",
 };
 
