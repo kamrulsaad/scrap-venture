@@ -16,7 +16,7 @@ export default function PickupForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-card border border-border p-6 rounded-xl shadow-md w-full max-w-md"
+      className="bg-card border border-border p-6 rounded-xl shadow-md w-full md:max-w-md"
     >
       <h2 className="text-xl font-semibold mb-4 text-card-foreground">
         Schedule a Pickup
