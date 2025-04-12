@@ -37,6 +37,14 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              href="/scrap-rates"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
+              Scrap Rates
+            </Link>
+          </li>
+          <li>
+            <Link
               href="#howitworks"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
@@ -82,6 +90,12 @@ export default function Navbar() {
                   className="block hover:text-primary transition-colors duration-200"
                 >
                   Home
+                </Link>
+                <Link
+                  href="/scrap-rates"
+                  className="block hover:text-primary transition-colors duration-200"
+                >
+                  Scrap Rates
                 </Link>
                 <Link
                   href="#howitworks"
