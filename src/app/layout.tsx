@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import Footer from "./(main)/_components/Footer";
+import Footer from "../components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Scrap Venture",
-  description: "",
+  description: "Scrap Today, Sustain Tomorrow!",
 };
 
 export default function RootLayout({

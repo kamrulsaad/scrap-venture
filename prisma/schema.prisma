@@ -36,3 +36,11 @@ model Comment {
   post      Post   @relation(fields: [postId], references: [id])
   postId    Int
 }
+
+model OtpVerification {
+  id        String   @id @default(cuid())
+  phone     String   @unique
+  otp       String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
